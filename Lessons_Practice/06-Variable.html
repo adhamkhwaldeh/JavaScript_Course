@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Hello in Html Tutorial"/>
+        <!--[if lt IE 9]>
+            <script src="html5shiv.js"></script>
+        <![endif]-->
+        <title>Page Title</title>
+
+        <link rel="icon" href="./Images/icon.png">
+
+        <style>
+            body {
+                text-align: center;
+                align-content: center;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        
+        <h2 style="text-align: center"> Introduction to Java script </h2>
+
+        <script>
+               function sumvariables(){
+                var price1 = 5;
+                var price2 = 6;
+                var total = price1 + price2;
+                return  total;
+               }
+
+               function functionHtmlResult(){
+                    var pi = 3.14;
+                    var person = "John Doe";
+                    var answer = 'Yes I am!';
+                    return  "<strong>"+ pi +"</strong>" + "<br>" + person + "<br>" + answer;
+               }
+
+               function undefinevariable(){
+                   var variable ;
+                   return variable;
+               }
+            
+        </script>
+        
+        <div>
+            <p>
+              Sum equation  5 + 6 =  <label id="sum"> <script>document.write(sumvariables()) </script> </label>
+            </p>
+
+            <p>
+                Result with Html 
+                <p>
+                    <script>
+                        document.write(functionHtmlResult()) 
+                    </script>
+                </p>
+            </p>
+
+            <p>
+                    Undefine variable : 
+                        <script>
+                            document.write(undefinevariable()) 
+                        </script>
+            </p>
+
+        </div>
+
+    </body>
+
+    
+</html>
